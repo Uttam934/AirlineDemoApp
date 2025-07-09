@@ -20,7 +20,7 @@ import com.example.airfiindia.viewmodel.FavoriteViewModel
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FavoritesScreen(
-    navController: NavController, // ⬅️ Required to go back
+    navController: NavController,
     favoriteViewModel: FavoriteViewModel = hiltViewModel()
 ) {
     val favorites by favoriteViewModel.favorites.collectAsState()
